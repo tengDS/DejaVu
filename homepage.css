@@ -1,0 +1,100 @@
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+h1 {
+    color: rgb(0, 134, 171);
+}
+
+p {
+    color:rgb(18, 159, 112);
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    width: 200px;
+    height: 100px;
+    padding: 0;
+    margin: auto;
+
+    justify-content: bottom;
+    align-items: bottom;
+}
+
+.navbar>div>a {
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar>div {
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(183, 246, 212);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(0, 130, 156);
+    flex: 1 1 auto;
+    border: 1px rgb(68, 158, 168) solid;
+    border-radius: 10px;
+    text-align: center;
+
+    margin: 5px;
+    /* and that, will result in a 10px gap */
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color: rgb(255, 229, 186);
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    background-color: #ffe0aa;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.navbar>div:hover {
+    background-color: rgb(148, 206, 164);
+}
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   flex-direction: column;
+   height: 100vh;  
+}
+#display-image {
+    width: 400px;
+    height: 225px;
+    border: 1px solid rgb(198, 198, 198);
+    background-position: center;
+    background-size: cover;
+}
+
