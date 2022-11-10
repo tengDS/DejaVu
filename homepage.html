@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Deja Vu:Home Page</title>
     <link rel="stylesheet" href="homepage.css" />
-</head>
+  </head>
 
-    <div class="split left">
+  <div class="split left">
     <body>
-        <h1>Archives</h1>
-        <p><i>Where your favorite memories lie...</i></p>
+      <script src="./script.js" async></script>
+
+      <h1>Archives</h1>
+      <p><i>Where your favorite memories lie...</i></p>
     </body>
-        <div class="centered">
-            <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
-            <div id="display-image"></div>
-            <script src="script.js"></script>
-            <label for="description">Type here:</label>
-            <textarea id="description" name="paragraph_text" rows="4" cols="50">
-                Enter text here...</textarea>
-
-        </div>
+    <div class="centered">
+      <input
+        type="file"
+        id="image-input-left"
+        accept="image/jpeg, image/png, image/jpg"
+      />
+      <div id="display-image-left"></div>
+      <label for="description">Type here:</label>
+      <textarea id="description-left" name="paragraph_text" rows="4" cols="50">
+                Enter text here...</textarea
+      >
     </div>
-    
-    <div class="split right">
-        <div class="centered">
-            <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
-            <div id="display-image"></div>
-            <script src="script.js"></script>
-            <label for="description">Type here:</label>
-            <textarea id="description" name="paragraph_text" rows="4" cols="50">
-                    Enter text here...</textarea>
-        <div class="navbar">
+  </div>
+
+  <div class="split right">
+    <div class="centered">
+      <input
+        type="file"
+        id="image-input-right"
+        accept="image/jpeg, image/png, image/jpg"
+      />
+      <div id="display-image-right"></div>
+      <label for="description">Type here:</label>
+      <textarea id="description-right" name="paragraph_text" rows="4" cols="50">
+                    Enter text here...</textarea
+      >
+      <div class="navbar">
         <div class="navpage3"><a href="settings.html">Settings</a></div>
+      </div>
     </div>
-        </div>
-    </div>
-
+  </div>
 </html>
