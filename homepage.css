@@ -11,15 +11,17 @@
 
 h1 {
     color: rgb(0, 134, 171);
+    text-align: center;
 }
 
 p {
     color:rgb(18, 159, 112);
+    text-align: center;
 }
 
 .navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 50px 50px;
     width: 200px;
     height: 100px;
